@@ -65,3 +65,49 @@ if(x==6)
 	
 }
 }
+
+//  COMMIT BY  EYOB CHIKSA 
+void entry()
+{
+	system("cls");
+loading();
+	cout<<"enter the number of car you enter ";
+	int a;
+	cin>>a;
+	abc c[a];
+ 	
+	ofstream in("eyus.txt", ios::app);
+	for(int i=0;i<a;i++)
+	{
+		cout<<"   enter "<<i+1<<" row data"<<endl;
+       cout<<"enter the car model : ";
+	   cin>>c[i].model;
+	   in<<c[i].model<<",";
+	   cout<<"enter the product country :";
+	   cin>>c[i].pcountry;
+	   in<<c[i].pcountry<<",";
+	   cout<<"enter the fuel type : ";
+	   cin>>c[i].ftype;
+	   in<<c[i].ftype<<",";
+	   cout<<"enter the color of the car :";
+	   cin>>c[i].color;
+	   in<<c[i].color<<",";
+	   cout<<"enter the price : ";
+	   cin>>c[i].price;
+	   in<<c[i].price<<",";
+	   cout<<"enter the horse power : ";
+	   cin>>c[i].hpower;
+	   in<<c[i].hpower<<",";
+	   cout<<"enter the production year : ";
+	   cin>>c[i].pyear;
+	   in<<c[i].pyear<<","<<"\n";
+	   	cout<<endl;
+	}
+	in.close();
+	cout<<"  data entered sucsessfully\n";
+	cout<<"enter any key to return back";
+cin.ignore();
+cin.get();
+system("cls");
+main();
+	}
